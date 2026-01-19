@@ -19,3 +19,6 @@ import { bfs } from "./search.js";
 let knight = new Knight();
 let moves = knight.getPossibleMoves([1, 1]);
 console.log(moves);
+
+let board = new Board();
+moves.forEach((move) => console.log(board.isValidPosition(move)));

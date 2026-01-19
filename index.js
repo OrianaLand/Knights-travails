@@ -15,3 +15,7 @@ import { bfs } from "./search.js";
 
 // Example usage (later):
 // knightMoves([0, 0], [7, 7]);
+
+let knight = new Knight();
+let moves = knight.getPossibleMoves([1, 1]);
+console.log(moves);

@@ -13,13 +13,18 @@ function createGetNeighbors(knight, board) {
 function knightMoves(start, end) {
   const board = new Board();
   const knight = new Knight();
+
+  if (!board.isValidPosition(start) || !board.isValidPosition(end)) {
+    throw Error("Invalid parameters");
+  }
+
   const getNeighbors = createGetNeighbors(knight, board);
   const path = bfs(start, end, getNeighbors);
 
-  console.log(`You made it in ${path.length - 1} moves!`);
+  console.log(`You made it in ${path.length - 1} moves! Here's your path:`);
   path.forEach((square) => console.log(square));
 
   return path;
 }
 
-knightMoves([0, 0], [7, 7]);
+knightMoves([3, 3], [4, 3]);

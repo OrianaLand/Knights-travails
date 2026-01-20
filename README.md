@@ -60,7 +60,7 @@ Each module has a **single responsibility**:
 - Implements a generic BFS algorithm
 - Does not know anything about chess
 
-### `script.js`
+### `index.js`
 
 - Wires all components together
 - Exposes the `knightMoves(start, end)` function

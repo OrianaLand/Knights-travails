@@ -72,7 +72,7 @@ This separation keeps the code **readable, testable, and maintainable**.
 ## 🚀 Usage
 
 ```js
-import { knightMoves } from "./src/script.js";
+import { knightMoves } from "./src/index.js";
 
 console.log(knightMoves([0, 0], [7, 7]));
 ```

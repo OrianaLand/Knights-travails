@@ -36,7 +36,7 @@ src/
 ├── knight.js // Knight movement rules
 ├── board.js // Board boundaries and validation
 ├── search.js // Generic BFS implementation
-└── script.js // Orchestration and knightMoves API
+└── index.js // Orchestration and knightMoves API
 ```
 
 ---
